@@ -30,8 +30,8 @@
 
     <developers>
         <developer>
-            <name>Nivaldo Monteiro</name>
-            <organization>Spring Framework Exploration</organization>
+            <name>John Thompson</name>
+            <organization>Spring Framework Guru</organization>
         </developer>
     </developers>
 
@@ -195,7 +195,7 @@
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>enforce-version</id>
+                        <id>enforce-versions</id>
                         <goals>
                             <goal>enforce</goal>
                         </goals>
@@ -204,13 +204,13 @@
                                 <requireMavenVersion>
                                     <version>[3.6.0,)</version>
                                 </requireMavenVersion>
-                                <requiredJavaVersion>
+                                <requireJavaVersion>
                                     <version>11</version>
-                                </requiredJavaVersion>
-                                <requiredReleaseDeps>
+                                </requireJavaVersion>
+                                <requireReleaseDeps>
                                     <onlyWhenRelease>true</onlyWhenRelease>
                                     <message>Release builds must not have on snapshot dependencies</message>
-                                </requiredReleaseDeps>
+                                </requireReleaseDeps>
                             </rules>
                         </configuration>
                     </execution>
